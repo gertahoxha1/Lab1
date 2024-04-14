@@ -4,7 +4,7 @@ import { services } from "../data";
 const Services = () => {
   return (
     <section className="section services" id="about">
-      <Title title="About" subTitle="us" />
+      <Title title="Services" subTitle="us" />
 
       <div className="section-center services-center">
         {services.map((service) => {

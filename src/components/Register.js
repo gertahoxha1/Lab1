@@ -1,19 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import registerImg from "../images/bg.jpg";
 import Title from "./Title";
-import { useNavigate } from "react-router-dom";
+
+
 const Register = () => {
-
-
-const navigate = useNavigate()
-const handleClick  = () =>{
-  navigate('/registerform')
-}
   return (
     <section className="section" id="register">
       <Title title="Register"/>
 
-      <div className="section-center register-center">
+      <div className="section-center register-center text-red-300">
         <div className="register-img">
           <img src={registerImg} className="register-photo" alt="" />
         </div>
@@ -29,9 +25,8 @@ const handleClick  = () =>{
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          <a href="/registerform" className="btn" onClick={handleClick} >
-            Register
-          </a>
+          {/* Use Link to navigate to RegisterForm */}
+          <Link to="/register-form" className="btn">Register</Link>
         </article>
       </div>
     </section>

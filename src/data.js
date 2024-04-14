@@ -1,11 +1,12 @@
-
 import plan from "./images/bg.jpg"
+
 export const pageLinks = [
     { id: 1, href: "#home", text: "home" },
     { id: 2, href: "#register", text: "register" },
     { id: 3, href: "#about", text: "about" },
     { id: 4, href: "#payment", text: "payment" },
   ];
+
   export const services = [
     {
       id: 1,
@@ -26,6 +27,9 @@ export const pageLinks = [
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Asperiores, officia.",
     },
   ];
+  
+
+
   export const payment = [
     {
       id: 1,

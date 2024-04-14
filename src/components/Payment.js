@@ -1,7 +1,8 @@
 import React from "react";
 import Title from "./Title";
 import { payment } from "../data";
-const Tours = () => {
+
+const Payment = () => {
   return (
     <section className="section" id="payment">
       <Title title="featured" subTitle="plans" />
@@ -41,4 +42,4 @@ const Tours = () => {
   );
 };
 
-export default Tours;
+export default Payment;

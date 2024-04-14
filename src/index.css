@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   /* dark shades of primary color*/
@@ -56,7 +59,10 @@ ul {
 a {
   text-decoration: none;
 }
-
+img:not(.nav-logo) {
+  width: 100%;
+  display: block;
+}
 
 h1,
 h2,
@@ -149,7 +155,6 @@ p {
     width: 95vw;
   }
 }
-
 /*
 =============== 
 Hero
@@ -363,6 +368,44 @@ Register
   }
 }
 
+.register-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Services */
+
 .services {
   background: var(--clr-grey-10);
 }
@@ -412,5 +455,83 @@ Register
   }
   .service-title {
     margin-bottom: 0.5rem;
+  }
+}
+
+/* Payment */
+
+.payment-card {
+  transition: var(--transition);
+  background: var(--clr-grey-10);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+.payment-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+.payment-img-container {
+  position: relative;
+}
+.payment-div {
+  height: 15rem;
+  object-fit: cover;
+}
+.payment-date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-1);
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0;
+}
+.payment-info {
+  padding: 1.25rem 1.5rem;
+}
+/* additional css for different layout*/
+.payment-title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.payment-title p,
+.payment-title h4 {
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+.payment-title p {
+  color: var(--clr-grey-7);
+}
+/* end of additional css for different layout*/
+.payment-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.payment-footer p {
+  line-height: 0;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}
+.payment-footer p span {
+  margin-right: 0.25rem;
+}
+.payment-btn {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .featured-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .featured-center {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
