@@ -1,3 +1,4 @@
+import Payment from "./components/PaymentJS"
 import Register from "./components/Register";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -10,6 +11,7 @@ function App() {
     <Home/>
     <Register/>
     <Services/>
+    <Payment/>
     </>
   ); 
 }
