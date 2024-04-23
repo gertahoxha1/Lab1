@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Services from "./components/Services";
 import Register from "./components/Register";
 import Payment from "./components/Payment";
+import Footer from "./components/Footer";
 // import RegisterForm from "./components/RegisterForm"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Register />
         <Services />
         <Payment />
+        <Footer />
         {/* <RegisterForm/> */}
       </div>
     </Router>
