@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import registerImg from "../images/bg.jpg";
 import Title from "./Title";
@@ -25,7 +26,6 @@ const Register = () => {
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          {/* Use Link to navigate to RegisterForm */}
           <Link to="/register-form" className="btn">Register</Link>
         </article>
       </div>
